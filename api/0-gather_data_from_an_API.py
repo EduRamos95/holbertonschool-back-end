@@ -21,7 +21,7 @@ if __name__ == "__main__":
     response_user = request.get(url_user)
     user_json = responde_user.json()
     for i in user_json:
-        if i.get("id") == url_id:
+        if i.get("id") == user_id:
             EMPLOYEE_NAME = i.get("name")
     response_todos = requets.get(url_todos)
     todos_json = response_todos.json()

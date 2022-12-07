@@ -37,7 +37,7 @@ if __name__ == "__main__":
         task_title = task.get("title")
         data_export.append({"task": task_title,
                             "completed": task_status,
-                            "useranme": user_name})
+                            "username": user_name})
 
     json_to_export = {"{}".format(user_id): data_export}
     with open("{}.json".format(user_id), "wt") as fs:
